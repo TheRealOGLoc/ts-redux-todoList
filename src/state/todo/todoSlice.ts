@@ -16,7 +16,7 @@ const todoSlice = createSlice({
       state.todos.push(action.payload)
     },
     removeTodoByIndex: (state, action: PayloadAction<Number>) => {
-      state.todos.filter((_, index) => index !== action.payload)
+      state.todos = state.todos.filter((_, index) => index !== action.payload)
     }
   }
 })
