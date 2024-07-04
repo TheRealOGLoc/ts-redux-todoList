@@ -1,9 +1,11 @@
-import Counter from "./components/Counter"
+import Counter from "./component/Counter"
+import TodoList from "./component/TodoList"
 
 function App() {
   return (
     <>
       <Counter />
+      <TodoList/>
     </>
   )
 }
